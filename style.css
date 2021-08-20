@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    color: white;
+    padding: 0vh 18vw;
+    margin-bottom: 30px;
+}
+
+.navL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+}
+
+.navL h1 {
+    width: 100px;
+}
+
+.navL a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.75;
+}
+
+.navL a:hover {
+    opacity: 1;
+}
+
+.navR {
+    width: 30vw;
+    text-align: right;
+}
+
+.navR button {
+    background-color: #17a2b8;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.main {
+    margin: 0vh 18vw;
+    display: flex;
+}
+
+.profile {
+    flex: 2;
+    margin-right: 2vw;
+}
+
+/* USERCARD */
+.usercard {
+    width: auto;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.usercard .header {
+    background-color: #17a2b8;
+    height: 70px;
+}
+
+.usercard .header img {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.usercard .info {
+    padding: 30px 2vw 15px 2vw;
+    background-color: white;
+}
+
+.usercard h1 {
+    margin: 2px 0px;
+}
+
+.usercard .info img {
+    width: 10px;
+    margin: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.usercard .info h3 {
+    display: inline-block;
+    margin: 2px 0px 4px 0px;
+}
+.usercard ul {
+    display: flex;
+    margin: 2px 0px;
+}
+
+.usercard ul li {
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.usercard .info p{
+    margin-top: 1px;
+}
+
+.usercard .editprofile {
+    margin: 5px 0px 0px 1px;
+}
+/* USERCARD END */
+
+/* EDUCATION */
+.education {
+    background-color: white;
+}
+
+.education .contentwindow {
+    width: auto;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.education .contentwindow h4 {
+    padding: 2px 15px;
+}
+
+.education .contentwindow h5 {
+    padding: 2px 15px;
+    color: gray;
+}
+
+.education .contentwindow p {
+    padding: 2px 15px;
+}
+
+.educard {
+    margin: 10px 0px;
+}
+/* EDUCATION END*/
+
+
+.connections {
+    flex: 1;
+}
+
+
+/* CONTENT WINDOW BASE*/
+.toplabel {
+    background-color: #333333;
+    border-bottom: 2px solid rgb(182, 182, 182);
+    color: white;
+    padding: 5px 15px;
+}
+.contentwindow {
+    width: auto;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#viewmore {
+    border-top: 3px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* MINICARD PRESETS */
+.minicard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px;
+}
+
+.minicardL {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.minicardL p {
+    margin-left: 12px;
+}
+
+.minicardL img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.minicardR img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.counter {
+    background-color: lightgrey;
+    padding: 4px 10px;
+    border-radius: 50%;
+    color: black;
+}
