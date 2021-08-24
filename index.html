@@ -26,7 +26,7 @@
                     <img src="/icons/user-circle.png" alt="profile picture">
                 </div>
                 <div class="info">
-                    <h1>Jane Doe</h1>
+                    <h1 id="displayname">Jane Doe</h1>
                     <img src="/icons/map-marker.png" alt="map pin">
                     <h3>Seattle</h3>
                     <ul>
@@ -37,7 +37,7 @@
                     <p>Master of shadows and the Internet!</p>
                     <div class="editprofile">
                         <img src="icons/gear.png" alt="gear">
-                        <a href="#">edit profile</a>
+                        <a id="editprofile" onclick="editProfile()" href="#">edit profile</a>
                     </div>
                 </div>
             </div>
@@ -54,15 +54,15 @@
         </div>
         <div class="connections">
             <div id="connectionrequests" class="contentwindow">
-                <h3 class="toplabel"> <span class="counter">2</span> Connection Requests</h3>
+                <h3 class="toplabel"> <span id="connectionrequestcounter" class="counter">2</span> Connection Requests</h3>
                 <div id="tode" class="minicard">
                     <div class="minicardL">
                         <img src="images/todd-s.jpg" alt="picture of todd">
                         <p>Todd E</p>
                     </div>
                     <div class="minicardR">
-                        <img src="icons/accept-circle.png" alt="check mark">
-                        <img src="icons/close-circle.png" alt="x mark">
+                        <button onclick="accept(tode)"><img src="icons/accept-circle.png" alt="check mark"></button>
+                        <button onclick="reject(tode)"><img src="icons/close-circle.png" alt="x mark"></button>
                     </div>
                 </div>
                 <div id="phik" class="minicard">
@@ -71,13 +71,13 @@
                         <p>Phil K</p>
                     </div>
                     <div class="minicardR">
-                        <img src="icons/accept-circle.png" alt="check mark">
-                        <img src="icons/close-circle.png" alt="x mark">
+                        <button onclick="accept(phik)"><img src="icons/accept-circle.png" alt="check mark"></button>
+                        <button onclick="reject(phik)"><img src="icons/close-circle.png" alt="x mark"></button>
                     </div>
                 </div>
             </div>
             <div id="yourconnections" class="contentwindow">
-                <h3 class="toplabel"> <span class="counter">500+</span> Your Connections</h3>
+                <h3 class="toplabel"> <span id="yourconnectionscounter" class="counter">500</span> Your Connections</h3>
                 <div id="adrd" class="minicard">
                     <div class="minicardL">
                         <img src="images/adrien-s.jpg" alt="picture of adrien">
@@ -108,5 +108,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
